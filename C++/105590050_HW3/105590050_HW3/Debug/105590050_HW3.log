@@ -1,0 +1,6 @@
+﻿  Pizza.cpp
+c:\users\user\desktop\105590050_hw3\105590050_hw3\pizza.cpp(44): warning C4101: 'value': unreferenced local variable
+c:\users\user\desktop\105590050_hw3\105590050_hw3\pizza.cpp(83): warning C4101: 'value': unreferenced local variable
+c:\users\user\desktop\105590050_hw3\105590050_hw3\pizza.cpp(141): warning C4101: 'value': unreferenced local variable
+  105590050_HW3.vcxproj -> C:\Users\User\Desktop\105590050_HW3\Debug\105590050_HW3.exe
+  105590050_HW3.vcxproj -> C:\Users\User\Desktop\105590050_HW3\Debug\105590050_HW3.pdb (Partial PDB)

@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\user\desktop\c++\105590050_hw2\105590050_hw2\main.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  105590050_HW2.vcxproj -> C:\Users\User\Desktop\C++\105590050_HW2\Debug\105590050_HW2.exe
+  105590050_HW2.vcxproj -> C:\Users\User\Desktop\C++\105590050_HW2\Debug\105590050_HW2.pdb (Partial PDB)
