@@ -29,6 +29,8 @@ int main()
             }
             else
                 type = INVALID;
+            if(data[0] >= '0' && data[0] <= '9' && type == IDENTIFIER)
+                type = INVALID;
         }
         
         if (type == NUMBER)
