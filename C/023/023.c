@@ -1,68 +1,87 @@
 #include<stdio.h>
+void function(int a,int b, int c, int d,int w,int x, int y, int z){
+    int correctA=0,correctB=0;
+    if(a==w){
+        correctA++;
+        w=99;
+    }
+    if(b==x ){
+        correctA++;
+        x=99;
+    }
+    if(c==y){
+        correctA++;
+        y=99;
+    }
+    if(d==z ){
+        correctA++;
+        z=99;
+    }
+    else if(a==x ){
+        correctB++;
+        x=99;
+    }
+    else if(a==y ){
+        correctB++;
+        y=99;
+    }
+    else if(a==z ){
+        correctB++;
+        z=99;
+    }
+
+    else if(b==w){
+        correctB++;
+        w=99;
+    }
+    else if(b==y){
+        correctB++;
+        y=99;
+    }
+    else if(b==z){
+        correctB++;
+        z=99;
+    }
+
+    else if(c==w){
+        correctB++;
+        w=99;
+    }
+    else if(c==x){
+        correctB++;
+        x=99;
+    }
+    else if(c==z){
+        correctB++;
+        z=99;
+    }
+
+    else if(d==w){
+        correctB++;
+        w=99;
+    }
+    else if(d==x){
+        correctB++;
+        x=99;
+    }
+    else if(d==y){
+        correctB++;
+        y=99;
+    }
+    printf("%dA%dB",correctA,correctB);
+}
 int main() {
-	//answer
-	int ans_1, ans_2, ans_3, ans_4;
-	int try_1, try_2, try_3, try_4;
-
-	int counterA, counterB;
-	int i = 0;
-	scanf("%d %d %d %d", &ans_1, &ans_2, &ans_3, &ans_4);
-	while(1)
-	{
-		counterA = counterB = 0;
-		scanf("%d", &try_1);
-		if(try_1 == -1)
-			break;
-		scanf("%d %d %d", &try_2, &try_3, &try_4);
-
-		if(ans_1 == try_1) {
-			counterA++;
-			try_1 = 99;
-		}
-		else if(ans_1 == try_2)
-			counterB++;
-		else if(ans_1 == try_3)
-			counterB++;
-		else if(ans_1 == try_4)
-			counterB++;
-
-		if(ans_2 == try_2)
-		{
-			counterA++;
-			try_2 = 99;
-		}
-		else if(ans_2 == try_1)
-			counterB++;
-		else if(ans_2 == try_3)
-			counterB++;
-		else if(ans_2 == try_4)
-			counterB++;
-
-		if(ans_3 == try_3)
-		{
-			counterA++;
-			try_3 = 99;
-		}
-		else if(ans_3 == try_1)
-			counterB++;
-		else if(ans_3 == try_2)
-			counterB++;
-		else if(ans_3 == try_4)
-			counterB++;
-
-
-		if(ans_4 == try_4){
-			counterA++;
-			try_4 = 99;
-		}
-		else if(ans_4 == try_1)
-			counterB++;
-		else if(ans_4 == try_2)
-			counterB++;
-		else if(ans_4 == try_3)
-			counterB++;
-
-		printf("%dA%dB\n", counterA, counterB);
-	}
-	return 0;
+	int w = 0, x = 0, y = 0, z = 0;
+	int a = 0, b = 0, c = 0, d = 0;
+	int correctA=0,correctB=0;
+	scanf("%d %d %d %d", &w, &x, &y, &z);
+	while(1){
+        scanf("%d",&a);
+        if(a==-1){
+            break;
+        }
+        scanf("%d %d %d", &b, &c, &d);
+        function(a,b,c,d,w,x,y,z);
+    }
+    return 0;
 }
